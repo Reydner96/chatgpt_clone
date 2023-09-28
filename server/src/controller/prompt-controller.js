@@ -2,7 +2,7 @@ const InputPrompt = require("../models/input-prompt")
 const openai = require("../config/openai")
 
 module.exports = {
-    async senText(req, res){
+    async sendText(req, res){
         const openaiAPI = openai.configuration()
         const inputModel = new InputPrompt(req.body)
 
